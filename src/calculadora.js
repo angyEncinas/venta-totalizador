@@ -5,6 +5,9 @@ function devolver_impuesto(estado){
     if(estado == "UT"){
         return 6.65;
     }
+    if(estado == "NV"){
+        return 8.00;
+    }
     else{
         return 0
     }
