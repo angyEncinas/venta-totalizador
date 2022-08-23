@@ -9,7 +9,7 @@
     "test": "jest --watch",
     "test-once": "jest --verbose --coverage"
   },
-  "author": "Israel Antezana R.",
+  "author": "Angy Alejandra Encinas Cabezas",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.16.7",
