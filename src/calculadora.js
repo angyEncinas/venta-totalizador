@@ -21,8 +21,8 @@ function devolver_impuesto(estado){
         return 0
     }
 }
-function calcular_impuesto(impuesto,valor_compra){
-    return (valor_compra* impuesto)/100;
+function calcular_adicional(parametro,valor_compra){
+    return (valor_compra* parametro)/100;
 }
 function obtener_descuento(valor_compra){
     if(valor_compra == 1000){
@@ -44,5 +44,6 @@ function obtener_descuento(valor_compra){
         return 0;
     }
 }
-  export {precio_neto,devolver_impuesto,calcular_impuesto,obtener_descuento};
+
+  export {precio_neto,devolver_impuesto,calcular_adicional,obtener_descuento};
   

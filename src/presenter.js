@@ -1,4 +1,4 @@
-import {precio_neto, devolver_impuesto,calcular_impuesto,obtener_descuento} from "./calculadora";
+import {precio_neto, devolver_impuesto,calcular_adicional,obtener_descuento} from "./calculadora";
 
 
 const cantidad = document.querySelector("#ingresar-cantidad");
@@ -19,8 +19,9 @@ form.addEventListener("submit", (event) => {
   const total = precio_neto(cantidaditem,precioitem);
   const valor_impuesto = devolver_impuesto(estadotipo);
   const descuento = obtener_descuento(total);
+  const valor_descuento = calcular_adicional(descuento,total);
 
   div1.innerHTML = "<p>" +"Precio Neto: "+ total + "</p>";
-  div2.innerHTML = "<p>" + "Impuesto para "+estadotipo+"("+valor_impuesto+ " $): $" +calcular_impuesto(valor_impuesto,total)+ "</p>";
-  div3.innerHTML = "<p>" +"Descuento"+ "("+descuento+ " %) : "+"</p>";
+  div2.innerHTML = "<p>" + "Impuesto para "+estadotipo+"("+valor_impuesto+ " $): $" +calcular_adicional(valor_impuesto,total)+ "</p>";
+  div3.innerHTML = "<p>" +"Descuento"+ "("+descuento+ " %) : "+valor_descuento+"</p>";
 });
