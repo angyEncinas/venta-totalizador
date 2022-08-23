@@ -44,6 +44,9 @@ function obtener_descuento(valor_compra){
         return 0;
     }
 }
+function sacar_monto_total(descuento,valor_neto){
+    return valor_neto - descuento;
+}
 
-  export {precio_neto,devolver_impuesto,calcular_adicional,obtener_descuento};
+  export {precio_neto,devolver_impuesto,calcular_adicional,obtener_descuento,sacar_monto_total};
   
