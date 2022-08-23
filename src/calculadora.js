@@ -28,6 +28,18 @@ function obtener_descuento(valor_compra){
     if(valor_compra == 1000){
         return 3;
     }
+    if(valor_compra == 3000){
+        return 5;
+    }
+    if(valor_compra == 7000){
+        return 7;
+    }
+    if(valor_compra == 10000){
+        return 10;
+    }
+    if(valor_compra == 30000){
+        return 15;
+    }
     else{
         return 0;
     }
