@@ -14,9 +14,15 @@ function devolver_impuesto(estado){
     if(estado == "AL"){
         return 4.00;
     }
+    if(estado == "CA"){
+        return 8.25;
+    }
     else{
         return 0
     }
 }
-  export {precio_neto,devolver_impuesto};
+function calcular_impuesto(impuesto,valor_compra){
+    return (valor_compra* impuesto)/100;
+}
+  export {precio_neto,devolver_impuesto,calcular_impuesto};
   
