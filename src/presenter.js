@@ -5,10 +5,10 @@ const cantidad = document.querySelector("#ingresar-cantidad");
 const precio = document.querySelector("#precio-item");
 const estado = document.querySelector("#codigo-estado");
 const form = document.querySelector("#totalizador-form");
-const div1 = document.querySelector("#resultado1-div")
-const div2 = document.querySelector("#resultado2-div")
-const div3 = document.querySelector("#resultado3-div")
-const div4 = document.querySelector("#resultado4-div")
+const div1 = document.querySelector("#Precio-Neto-div")
+const div2 = document.querySelector("#Impuesto-div")
+const div3 = document.querySelector("#Descuento-div")
+const div4 = document.querySelector("#TotalFinal-div")
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
